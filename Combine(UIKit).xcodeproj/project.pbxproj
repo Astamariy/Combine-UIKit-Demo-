@@ -29,6 +29,11 @@
 		18A9FD2C2809BB7F0011FA26 /* LocationListRouterStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9FD2B2809BB7F0011FA26 /* LocationListRouterStep.swift */; };
 		18A9FD2F2809CB200011FA26 /* LocationsRepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9FD2E2809CB200011FA26 /* LocationsRepositoryError.swift */; };
 		18A9FD332809CCD00011FA26 /* LocationListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9FD322809CCD00011FA26 /* LocationListConfigurator.swift */; };
+		C34F37E12809ED8100DC3B63 /* UnitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37E02809ED8100DC3B63 /* UnitType.swift */; };
+		C34F37E32809EDA000DC3B63 /* AnyUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37E22809EDA000DC3B63 /* AnyUnit.swift */; };
+		C34F37E52809EDC000DC3B63 /* ViewModelBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37E42809EDC000DC3B63 /* ViewModelBindable.swift */; };
+		C34F37E72809EDD700DC3B63 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37E62809EDD700DC3B63 /* ViewModelType.swift */; };
+		C34F37E92809EDFD00DC3B63 /* AnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37E82809EDFD00DC3B63 /* AnyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,11 @@
 		18A9FD2B2809BB7F0011FA26 /* LocationListRouterStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListRouterStep.swift; sourceTree = "<group>"; };
 		18A9FD2E2809CB200011FA26 /* LocationsRepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsRepositoryError.swift; sourceTree = "<group>"; };
 		18A9FD322809CCD00011FA26 /* LocationListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListConfigurator.swift; sourceTree = "<group>"; };
+		C34F37E02809ED8100DC3B63 /* UnitType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitType.swift; sourceTree = "<group>"; };
+		C34F37E22809EDA000DC3B63 /* AnyUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyUnit.swift; sourceTree = "<group>"; };
+		C34F37E42809EDC000DC3B63 /* ViewModelBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBindable.swift; sourceTree = "<group>"; };
+		C34F37E62809EDD700DC3B63 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		C34F37E82809EDFD00DC3B63 /* AnyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,7 @@
 			children = (
 				186C5465280991E100D216BB /* AppDelegate.swift */,
 				186C5467280991E100D216BB /* SceneDelegate.swift */,
+				C34F37DE2809ECDB00DC3B63 /* Tools */,
 				18A9FD282809BAEA0011FA26 /* Navigation */,
 				186C54842809999900D216BB /* Repositories */,
 				186C54792809928300D216BB /* Screens */,
@@ -203,6 +214,26 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		C34F37DE2809ECDB00DC3B63 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C34F37DF2809ECE700DC3B63 /* MVVM+support */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C34F37DF2809ECE700DC3B63 /* MVVM+support */ = {
+			isa = PBXGroup;
+			children = (
+				C34F37E02809ED8100DC3B63 /* UnitType.swift */,
+				C34F37E22809EDA000DC3B63 /* AnyUnit.swift */,
+				C34F37E42809EDC000DC3B63 /* ViewModelBindable.swift */,
+				C34F37E62809EDD700DC3B63 /* ViewModelType.swift */,
+				C34F37E82809EDFD00DC3B63 /* AnyViewModel.swift */,
+			);
+			path = "MVVM+support";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,15 +309,20 @@
 				186C54932809A7F400D216BB /* ImagesRepositoryError.swift in Sources */,
 				18A9FD2F2809CB200011FA26 /* LocationsRepositoryError.swift in Sources */,
 				18A9FD2A2809BB130011FA26 /* Step.swift in Sources */,
+				C34F37E32809EDA000DC3B63 /* AnyUnit.swift in Sources */,
 				18A9FD272809BAE50011FA26 /* Router.swift in Sources */,
 				186C54902809A65700D216BB /* ImagesRepositoryProtocol.swift in Sources */,
 				186C546A280991E100D216BB /* LocationListViewController.swift in Sources */,
 				186C5466280991E100D216BB /* AppDelegate.swift in Sources */,
 				18A9FD332809CCD00011FA26 /* LocationListConfigurator.swift in Sources */,
 				18A9FD252809BACB0011FA26 /* LocationListRouter.swift in Sources */,
+				C34F37E72809EDD700DC3B63 /* ViewModelType.swift in Sources */,
 				186C548E2809A64A00D216BB /* ImagesRepository.swift in Sources */,
+				C34F37E12809ED8100DC3B63 /* UnitType.swift in Sources */,
 				18A9FD2C2809BB7F0011FA26 /* LocationListRouterStep.swift in Sources */,
 				186C54832809999300D216BB /* LocationsRepository.swift in Sources */,
+				C34F37E52809EDC000DC3B63 /* ViewModelBindable.swift in Sources */,
+				C34F37E92809EDFD00DC3B63 /* AnyViewModel.swift in Sources */,
 				186C54892809A31E00D216BB /* LocationTableViewCell.swift in Sources */,
 				18A9FD232809B59B0011FA26 /* LocationListViewModelProtocol.swift in Sources */,
 				186C5487280999AD00D216BB /* LocationsRepositoryProtocol.swift in Sources */,

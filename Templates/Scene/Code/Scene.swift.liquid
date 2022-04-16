@@ -1,0 +1,57 @@
+import UIKit
+import Combine
+
+final class {{ module_info.name }}ViewController: UIViewController, ViewModelBindable {
+    
+    // MARK: - TypeAlias
+    
+    typealias ContentView = {{ module_info.name }}View
+    typealias Unit = {{ module_info.name }}ViewUnit
+    typealias ViewModel = Unit.ViewModel
+    
+    // MARK: - Private properties
+    
+    private var subscriptions = Set<AnyCancellable>()
+    private lazy var contentView = ContentView()
+    
+    // MARK: - Public properties
+    
+    var viewModel: ViewModel?
+}
+
+// MARK: - Life cycle
+
+extension {{ module_info.name }}ViewController {
+
+    override func loadView() {
+        view = contentView
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        guard let viewModel = viewModel else {
+            preconditionFailure("viewModel must be assigned before viewDidLoad")
+        }
+        commonInit()
+        bind(viewModel: viewModel)
+    }
+}
+
+// MARK: - Implement ViewModelBindable
+
+extension {{ module_info.name }}ViewController {
+    func bind(viewModel: ViewModel) {
+        let input = ViewModel.Input()
+        let output = viewModel.transform(input: input)
+        
+        output.empty.sink(receiveValue: {}).store(in: &subscriptions)
+    }
+}
+
+// MARK: - Common init
+
+private extension {{ module_info.name }}ViewController {
+    func commonInit() {
+        
+    }
+}

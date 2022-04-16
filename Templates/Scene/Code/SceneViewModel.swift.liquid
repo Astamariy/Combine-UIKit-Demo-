@@ -1,0 +1,51 @@
+import Foundation
+import Combine
+
+final class {{ module_info.name }}ViewModel: ViewModelType {
+
+    // MARK: - TypeAlias
+    
+    typealias Unit = {{ module_info.name }}ViewUnit
+    
+    // MARK: - Model Configuration
+    
+    struct Configuration {
+        
+    }
+    
+    // MARK: - Dependencies
+    
+    struct Dependencies {
+        
+    }
+    
+    // MARK: - Private property
+    
+    private let configuration: Configuration
+    private let dependencies: Dependencies
+    private let router: Router
+    
+    // MARK: - Initialization
+    
+    init(
+        dependencies: Dependencies,
+        configuration: Configuration,
+        router: Router
+    ) {
+        self.dependencies = dependencies
+        self.configuration = configuration
+        self.router = router
+    }
+    
+    func transform(input: Unit.Input) -> Unit.Output {
+        return Unit.Output(
+            empty: Empty<Void, Never>().eraseToAnyPublisher()
+        )
+    }
+}
+
+// MARK: - ViewModel transform
+
+private extension {{ module_info.name }}ViewModel {
+    
+}

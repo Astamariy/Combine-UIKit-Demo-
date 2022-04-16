@@ -1,0 +1,25 @@
+import Foundation
+
+enum {{ module_info.name }}Configurator {
+
+    // MARK: - Public methods
+
+    static func configure(
+        viewController: {{ module_info.name }}ViewController,
+        configuration: {{ module_info.name }}ViewModel.Configuration,
+        router: Router
+    ) {
+        let dependencies = {{ module_info.name }}ViewModel.Dependencies(
+            
+        )
+
+        let viewModel = {{ module_info.name }}ViewModel(
+            dependencies: dependencies,
+            configuration: configuration,
+            router: router
+        )
+
+        viewController.viewModel = viewModel.asAnyViewModel()
+    }
+
+}

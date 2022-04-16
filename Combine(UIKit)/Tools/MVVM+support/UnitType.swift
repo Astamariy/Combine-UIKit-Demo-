@@ -10,8 +10,10 @@ import Foundation
 protocol UnitType {
     associatedtype Input
     associatedtype Output
+    associatedtype Event = Never
 }
 
 extension UnitType {
     typealias ViewModel = AnyViewModel<Input, Output>
+    typealias EventTracker = AnyEventTracker<Event>
 }

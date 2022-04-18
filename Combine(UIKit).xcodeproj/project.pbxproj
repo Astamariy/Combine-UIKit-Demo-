@@ -30,6 +30,12 @@
 		18A9FD2C2809BB7F0011FA26 /* LocationListRouterStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9FD2B2809BB7F0011FA26 /* LocationListRouterStep.swift */; };
 		18A9FD2F2809CB200011FA26 /* LocationsRepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9FD2E2809CB200011FA26 /* LocationsRepositoryError.swift */; };
 		18A9FD332809CCD00011FA26 /* LocationListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9FD322809CCD00011FA26 /* LocationListConfigurator.swift */; };
+		18A9FD36280D89D20011FA26 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9FD35280D89D20011FA26 /* LocationListView.swift */; };
+		18A9FD38280D9B1A0011FA26 /* LocationListObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9FD37280D9B1A0011FA26 /* LocationListObservableObject.swift */; };
+		18A9FD3B280D9F5D0011FA26 /* LocationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9FD3A280D9F5D0011FA26 /* LocationListCell.swift */; };
+		18A9FD3D280D9F9D0011FA26 /* LocationListCellObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9FD3C280D9F9C0011FA26 /* LocationListCellObservableObject.swift */; };
+		18A9FD40280DA3ED0011FA26 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9FD3F280DA3ED0011FA26 /* ActivityIndicator.swift */; };
+		18A9FD43280DA6280011FA26 /* LocationListContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9FD42280DA6280011FA26 /* LocationListContainerViewController.swift */; };
 		19501A4BAE9E3FC31FE766CD /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B9C3A03419163D0A99C4A /* LocationsView.swift */; };
 		1CD21110676C866389F38C93 /* LocationsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C466085C576766E378B4B0 /* LocationsConfigurator.swift */; };
 		29D9F8C5474CCEA37E1A2180 /* SomeLocationTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4CDE1FF9B300DA3DA2EF21 /* SomeLocationTableViewCellViewModel.swift */; };
@@ -64,7 +70,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0172CE71CDDB6AE371421048 /* SomView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomView.swift; sourceTree = "<group>"; };
 		186C5462280991E100D216BB /* Combine(UIKit).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Combine(UIKit).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		186C5465280991E100D216BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		186C5467280991E100D216BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,11 +94,16 @@
 		18A9FD2B2809BB7F0011FA26 /* LocationListRouterStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListRouterStep.swift; sourceTree = "<group>"; };
 		18A9FD2E2809CB200011FA26 /* LocationsRepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsRepositoryError.swift; sourceTree = "<group>"; };
 		18A9FD322809CCD00011FA26 /* LocationListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListConfigurator.swift; sourceTree = "<group>"; };
+		18A9FD35280D89D20011FA26 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		18A9FD37280D9B1A0011FA26 /* LocationListObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListObservableObject.swift; sourceTree = "<group>"; };
+		18A9FD3A280D9F5D0011FA26 /* LocationListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListCell.swift; sourceTree = "<group>"; };
+		18A9FD3C280D9F9C0011FA26 /* LocationListCellObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListCellObservableObject.swift; sourceTree = "<group>"; };
+		18A9FD3F280DA3ED0011FA26 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		18A9FD42280DA6280011FA26 /* LocationListContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListContainerViewController.swift; sourceTree = "<group>"; };
 		1B4CDE1FF9B300DA3DA2EF21 /* SomeLocationTableViewCellViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomeLocationTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		2812763FB36176CA4AB9B2F6 /* LocationsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		3A5A72546D8F35592663CB59 /* LocationsViewUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationsViewUnit.swift; sourceTree = "<group>"; };
 		3DF3141885EEA06E89ECD213 /* LocationsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
-		5B2077E6F40490113D0EFAC0 /* SomViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomViewModel.swift; sourceTree = "<group>"; };
 		6532966CFE22DCEFC8A457A3 /* SomeLocationTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomeLocationTableViewCell.swift; sourceTree = "<group>"; };
 		93C466085C576766E378B4B0 /* LocationsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationsConfigurator.swift; sourceTree = "<group>"; };
 		95DEA894DB508F3BA9439188 /* SomeLocationTableViewCellViewUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomeLocationTableViewCellViewUnit.swift; sourceTree = "<group>"; };
@@ -111,8 +121,6 @@
 		C34F37E82809EDFD00DC3B63 /* AnyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyViewModel.swift; sourceTree = "<group>"; };
 		C34F37EE2809F0F600DC3B63 /* Combine(UIKit)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Combine(UIKit)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34F37F02809F0F600DC3B63 /* Combine_UIKit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_UIKit_Tests.swift; sourceTree = "<group>"; };
-		D80BD128B093B4D3DBFAC592 /* SomViewUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomViewUnit.swift; sourceTree = "<group>"; };
-		E977676FABC9017EE5609CAE /* SomViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomViewController.swift; sourceTree = "<group>"; };
 		F18B9C3A03419163D0A99C4A /* LocationsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,17 +143,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0FE62BD12F38DADB32C545E9 /* Som */ = {
-			isa = PBXGroup;
-			children = (
-				0172CE71CDDB6AE371421048 /* SomView.swift */,
-				E977676FABC9017EE5609CAE /* SomViewController.swift */,
-				D80BD128B093B4D3DBFAC592 /* SomViewUnit.swift */,
-				5B2077E6F40490113D0EFAC0 /* SomViewModel.swift */,
-			);
-			path = Som;
-			sourceTree = "<group>";
-		};
 		186C5459280991E100D216BB = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +166,7 @@
 			children = (
 				186C5465280991E100D216BB /* AppDelegate.swift */,
 				186C5467280991E100D216BB /* SceneDelegate.swift */,
+				18A9FD41280DA3F30011FA26 /* Views */,
 				C34F37DE2809ECDB00DC3B63 /* Tools */,
 				18A9FD282809BAEA0011FA26 /* Navigation */,
 				186C54842809999900D216BB /* Repositories */,
@@ -177,7 +175,6 @@
 				186C546E280991E400D216BB /* Assets.xcassets */,
 				186C5470280991E400D216BB /* LaunchScreen.storyboard */,
 				186C5473280991E400D216BB /* Info.plist */,
-				6FE5D434C23FE55D57A54F6C /* Scenes */,
 			);
 			path = "Combine(UIKit)";
 			sourceTree = "<group>";
@@ -195,6 +192,7 @@
 		186C547A2809929700D216BB /* LocationList */ = {
 			isa = PBXGroup;
 			children = (
+				18A9FD39280D9C540011FA26 /* SwiftUI */,
 				18A9FD312809CCBF0011FA26 /* View */,
 				18A9FD302809CCB50011FA26 /* ViewModel */,
 				18A9FD2D2809BC810011FA26 /* Router */,
@@ -286,6 +284,34 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		18A9FD39280D9C540011FA26 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				18A9FD3E280D9FAE0011FA26 /* Cell */,
+				18A9FD35280D89D20011FA26 /* LocationListView.swift */,
+				18A9FD37280D9B1A0011FA26 /* LocationListObservableObject.swift */,
+				18A9FD42280DA6280011FA26 /* LocationListContainerViewController.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		18A9FD3E280D9FAE0011FA26 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				18A9FD3A280D9F5D0011FA26 /* LocationListCell.swift */,
+				18A9FD3C280D9F9C0011FA26 /* LocationListCellObservableObject.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		18A9FD41280DA3F30011FA26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18A9FD3F280DA3ED0011FA26 /* ActivityIndicator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		41638233D79A4BCA4713F02C /* Locations */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,14 +322,6 @@
 				93C466085C576766E378B4B0 /* LocationsConfigurator.swift */,
 			);
 			path = Locations;
-			sourceTree = "<group>";
-		};
-		6FE5D434C23FE55D57A54F6C /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				0FE62BD12F38DADB32C545E9 /* Som */,
-			);
-			path = Scenes;
 			sourceTree = "<group>";
 		};
 		78AAD99DF92D429B019951F6 /* SomeLocation */ = {
@@ -491,6 +509,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				186C548B2809A52000D216BB /* LocationCellModel.swift in Sources */,
+				18A9FD36280D89D20011FA26 /* LocationListView.swift in Sources */,
 				C32393B2280A3D6A00FF3976 /* Runnable.swift in Sources */,
 				186C54932809A7F400D216BB /* ImagesRepositoryError.swift in Sources */,
 				C32393A0280A1E4100FF3976 /* AnyEventTracker.swift in Sources */,
@@ -498,20 +517,24 @@
 				18A9FD2A2809BB130011FA26 /* Step.swift in Sources */,
 				C34F37E32809EDA000DC3B63 /* AnyUnit.swift in Sources */,
 				18A9FD272809BAE50011FA26 /* Router.swift in Sources */,
+				18A9FD3D280D9F9D0011FA26 /* LocationListCellObservableObject.swift in Sources */,
 				186C54902809A65700D216BB /* ImagesRepositoryProtocol.swift in Sources */,
 				186C546A280991E100D216BB /* LocationListViewController.swift in Sources */,
 				186C5466280991E100D216BB /* AppDelegate.swift in Sources */,
 				18A9FD332809CCD00011FA26 /* LocationListConfigurator.swift in Sources */,
 				18A9FD252809BACB0011FA26 /* LocationListRouter.swift in Sources */,
 				C34F37E72809EDD700DC3B63 /* ViewModelType.swift in Sources */,
+				18A9FD40280DA3ED0011FA26 /* ActivityIndicator.swift in Sources */,
 				186C548E2809A64A00D216BB /* ImagesRepository.swift in Sources */,
 				C34F37E12809ED8100DC3B63 /* UnitType.swift in Sources */,
 				18A9FD2C2809BB7F0011FA26 /* LocationListRouterStep.swift in Sources */,
+				18A9FD38280D9B1A0011FA26 /* LocationListObservableObject.swift in Sources */,
 				186C54832809999300D216BB /* LocationsRepository.swift in Sources */,
 				C34F37E52809EDC000DC3B63 /* ViewModelBindable.swift in Sources */,
 				C34F37E92809EDFD00DC3B63 /* AnyViewModel.swift in Sources */,
 				186C54892809A31E00D216BB /* LocationTableViewCell.swift in Sources */,
 				18A9FD232809B59B0011FA26 /* LocationListViewModelProtocol.swift in Sources */,
+				18A9FD3B280D9F5D0011FA26 /* LocationListCell.swift in Sources */,
 				186C5487280999AD00D216BB /* LocationsRepositoryProtocol.swift in Sources */,
 				C323939C280A196900FF3976 /* ReactiveReusable.swift in Sources */,
 				C32393AD280A3B7200FF3976 /* Combine+WithLatestFrom.swift in Sources */,
@@ -524,6 +547,7 @@
 				07D2B317C7A11919CF57E417 /* SomeLocationTableViewCellViewUnit.swift in Sources */,
 				C32393B4280A423E00FF3976 /* Combine+ControlEvent.swift in Sources */,
 				29D9F8C5474CCEA37E1A2180 /* SomeLocationTableViewCellViewModel.swift in Sources */,
+				18A9FD43280DA6280011FA26 /* LocationListContainerViewController.swift in Sources */,
 				19501A4BAE9E3FC31FE766CD /* LocationsView.swift in Sources */,
 				DE20C815F56F956DD2B82D14 /* LocationsViewController.swift in Sources */,
 				338FC4885E2C0EBADECB540F /* LocationsViewUnit.swift in Sources */,

@@ -8,7 +8,8 @@
 import Combine
 import UIKit
 
-struct LocationCellModel {
+struct LocationCellModel: Identifiable {
+    let id = UUID()
     let icon: AnyPublisher<UIImage, Never>
     let name: String
 }

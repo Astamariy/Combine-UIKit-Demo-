@@ -17,20 +17,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPR-8C-go9">
-                                <rect key="frame" x="138" y="459.5" width="138" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Показать список"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="diH-dJ-tc9"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FP0-74-2e7">
+                                <rect key="frame" x="107.5" y="444" width="199" height="62"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPR-8C-go9">
+                                        <rect key="frame" x="0.0" y="0.0" width="199" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Показать список (UIKit)"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="diH-dJ-tc9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbd-5L-uTw">
+                                        <rect key="frame" x="0.0" y="31" width="199" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Показать список (SwiftUI)"/>
+                                        <connections>
+                                            <segue destination="eKh-XE-CE9" kind="show" id="Wvj-OQ-n8J"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CCl-7e-Urb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DPR-8C-go9" firstAttribute="centerY" secondItem="CCl-7e-Urb" secondAttribute="centerY" id="EJJ-dg-tQ8"/>
-                            <constraint firstItem="DPR-8C-go9" firstAttribute="centerX" secondItem="CCl-7e-Urb" secondAttribute="centerX" id="g1S-8D-d3e"/>
+                            <constraint firstItem="FP0-74-2e7" firstAttribute="centerX" secondItem="CCl-7e-Urb" secondAttribute="centerX" id="Phy-Pz-DXq"/>
+                            <constraint firstItem="FP0-74-2e7" firstAttribute="centerY" secondItem="CCl-7e-Urb" secondAttribute="centerY" id="pNo-on-Uh9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZMt-xh-T6R"/>
@@ -118,6 +131,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1755" y="102"/>
+        </scene>
+        <!--Location List Container View Controller-->
+        <scene sceneID="1qA-pC-Ont">
+            <objects>
+                <viewController id="eKh-XE-CE9" customClass="LocationListContainerViewController" customModule="Combine_UIKit_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AyE-IE-GtB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KaK-Ef-Doe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ws7-u1-X5z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pvf-Sm-nrS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="871"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XX2-4k-NPg">

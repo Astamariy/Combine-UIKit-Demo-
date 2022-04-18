@@ -1,0 +1,45 @@
+import SnapKit
+import UIKit
+
+final class {{ module_info.name }}View: UIView {
+
+    // MARK: - Constants
+    
+    private enum Constants {
+        
+    }
+    
+    // MARK: - Initialization
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        commonInit()
+    }
+}
+
+// MARK: - CommonInit
+
+private extension {{ module_info.name }}View {
+    func commonInit() {
+        setConstraints()
+        localize()
+        setUI()
+    }
+    
+    func setConstraints() {
+        
+    }
+    
+    func localize() {
+        
+    }
+
+    func setUI() {
+        
+    }
+}

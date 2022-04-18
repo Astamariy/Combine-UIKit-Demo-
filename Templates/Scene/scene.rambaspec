@@ -1,0 +1,11 @@
+# Template information section
+name: scene
+summary: MVVM implementation
+
+# The declarations for code files.
+code_files:
+- {name: View.swift, path: Code/SceneView.swift.liquid}
+- {name: ViewController.swift, path: Code/Scene.swift.liquid}
+- {name: ViewUnit.swift, path: Code/SceneUnit.swift.liquid}
+- {name: ViewModel.swift, path: Code/SceneViewModel.swift.liquid}
+- {name: Configurator.swift, path: Code/SceneConfigurator.swift.liquid}

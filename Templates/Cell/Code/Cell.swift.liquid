@@ -1,0 +1,84 @@
+import UIKit
+import SnapKit
+import Combine
+
+final class {{ module_info.name }}TableViewCell: UITableViewCell, ViewModelBindable, ReactiveReusable {
+    
+    // MARK: - TypeAlias
+    
+    typealias Unit = {{ module_info.name }}TableViewCellUnit
+    typealias ViewModel = Unit.ViewModel
+    
+    // MARK: - Constants
+    
+    private enum Constants {
+        
+    }
+    
+    // MARK: - Private properties
+    
+    private var subscriptions = Set<AnyCancellable>()
+    
+    // MARK: - Initialization
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        commonInit()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        commonInit()
+    }
+}
+
+// MARK: - Life cycle
+
+extension {{ module_info.name }}TableViewCell {
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        reuse()
+    }
+}
+
+// MARK: - Implement ViewModelBindable
+
+extension {{ module_info.name }}TableViewCell {
+    func bind(viewModel: ViewModel) {
+        let input = ViewModel.Input()
+        let output = viewModel.transform(input: input)
+        
+        output.empty.sink(receiveValue: {}).store(in: &subscriptions)
+    }
+}
+
+// MARK: - Common init
+
+private extension {{ module_info.name }}TableViewCell {
+    func commonInit() {
+        setConstraints()
+        localize()
+        setUI()
+    }
+    
+    func setConstraints() {
+        
+    }
+    
+    func localize() {
+        
+    }
+
+    func setUI() {
+        
+    }
+}
+
+// MARK: - Implement ReactiveReusable
+
+extension {{ module_info.name }}TableViewCell {
+    func reuse() {
+        subscriptions.removeAll()
+    }
+}

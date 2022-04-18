@@ -1,0 +1,9 @@
+# Template information section
+name: cell
+summary: MVVM implementation
+
+# The declarations for code files.
+code_files:
+- {name: TableViewCell.swift, path: Code/Cell.swift.liquid}
+- {name: TableViewCellViewUnit.swift, path: Code/CellViewUnit.swift.liquid}
+- {name: TableViewCellViewModel.swift, path: Code/CellViewModel.swift.liquid}

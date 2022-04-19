@@ -17,19 +17,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        let scene = LocationsViewController()
-        let router = LocationListRouter(viewController: scene)
-        LocationsConfigurator.configure(
-            viewController: scene,
-            configuration: .init(navigationBarTitle: "Popo"),
-            router: router
-        )
-        let nc = UINavigationController(rootViewController: scene)
-        let window = UIWindow(windowScene: windowScene).apply {
+        let nc = UINavigationController()
+        let router = LocationListRouter(viewController: nc)
+        let scene = SWULocationsSceneFactory.makeScene(router: router)
+        nc.pushViewController(scene, animated: true)
+        
+        window = UIWindow(windowScene: windowScene).apply {
             $0.makeKeyAndVisible()
             $0.rootViewController = nc
         }
-        self.window = window
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -43,12 +43,17 @@
 		C32393B0280A3D5000FF3976 /* Appliable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32393AF280A3D5000FF3976 /* Appliable.swift */; };
 		C32393B2280A3D6A00FF3976 /* Runnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32393B1280A3D6A00FF3976 /* Runnable.swift */; };
 		C32393B4280A423E00FF3976 /* Combine+ControlEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32393B3280A423E00FF3976 /* Combine+ControlEvent.swift */; };
+		C332C123280DA47A0009DA8A /* SWULocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C332C122280DA47A0009DA8A /* SWULocationView.swift */; };
 		C34F37E12809ED8100DC3B63 /* UnitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37E02809ED8100DC3B63 /* UnitType.swift */; };
 		C34F37E32809EDA000DC3B63 /* AnyUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37E22809EDA000DC3B63 /* AnyUnit.swift */; };
 		C34F37E52809EDC000DC3B63 /* ViewModelBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37E42809EDC000DC3B63 /* ViewModelBindable.swift */; };
 		C34F37E72809EDD700DC3B63 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37E62809EDD700DC3B63 /* ViewModelType.swift */; };
 		C34F37E92809EDFD00DC3B63 /* AnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37E82809EDFD00DC3B63 /* AnyViewModel.swift */; };
 		C34F37F12809F0F600DC3B63 /* Combine_UIKit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37F02809F0F600DC3B63 /* Combine_UIKit_Tests.swift */; };
+		C3C55924280F089700CC4A05 /* SWULocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C55923280F089700CC4A05 /* SWULocationViewModel.swift */; };
+		C3C55927280F0C7E00CC4A05 /* SWULocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C55926280F0C7E00CC4A05 /* SWULocationsView.swift */; };
+		C3C55929280F0C8C00CC4A05 /* SWULocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C55928280F0C8C00CC4A05 /* SWULocationsViewModel.swift */; };
+		C3C5592B280F109E00CC4A05 /* SWULocationsSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C5592A280F109E00CC4A05 /* SWULocationsSceneFactory.swift */; };
 		D331FCEAAC20921F95051CD8 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF3141885EEA06E89ECD213 /* LocationsViewModel.swift */; };
 		DE20C815F56F956DD2B82D14 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2812763FB36176CA4AB9B2F6 /* LocationsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -102,6 +107,7 @@
 		C32393AF280A3D5000FF3976 /* Appliable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appliable.swift; sourceTree = "<group>"; };
 		C32393B1280A3D6A00FF3976 /* Runnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runnable.swift; sourceTree = "<group>"; };
 		C32393B3280A423E00FF3976 /* Combine+ControlEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+ControlEvent.swift"; sourceTree = "<group>"; };
+		C332C122280DA47A0009DA8A /* SWULocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWULocationView.swift; sourceTree = "<group>"; };
 		C34F37E02809ED8100DC3B63 /* UnitType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitType.swift; sourceTree = "<group>"; };
 		C34F37E22809EDA000DC3B63 /* AnyUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyUnit.swift; sourceTree = "<group>"; };
 		C34F37E42809EDC000DC3B63 /* ViewModelBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBindable.swift; sourceTree = "<group>"; };
@@ -109,6 +115,10 @@
 		C34F37E82809EDFD00DC3B63 /* AnyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyViewModel.swift; sourceTree = "<group>"; };
 		C34F37EE2809F0F600DC3B63 /* Combine(UIKit)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Combine(UIKit)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34F37F02809F0F600DC3B63 /* Combine_UIKit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_UIKit_Tests.swift; sourceTree = "<group>"; };
+		C3C55923280F089700CC4A05 /* SWULocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWULocationViewModel.swift; sourceTree = "<group>"; };
+		C3C55926280F0C7E00CC4A05 /* SWULocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWULocationsView.swift; sourceTree = "<group>"; };
+		C3C55928280F0C8C00CC4A05 /* SWULocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWULocationsViewModel.swift; sourceTree = "<group>"; };
+		C3C5592A280F109E00CC4A05 /* SWULocationsSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWULocationsSceneFactory.swift; sourceTree = "<group>"; };
 		F18B9C3A03419163D0A99C4A /* LocationsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +168,7 @@
 				18A9FD282809BAEA0011FA26 /* Navigation */,
 				186C54842809999900D216BB /* Repositories */,
 				186C54792809928300D216BB /* Screens */,
+				C332C121280DA4540009DA8A /* SwiftUI+Screens */,
 				186C546B280991E100D216BB /* Main.storyboard */,
 				186C546E280991E400D216BB /* Assets.xcassets */,
 				186C5470280991E400D216BB /* LaunchScreen.storyboard */,
@@ -327,6 +338,15 @@
 			path = "Foundation+extension";
 			sourceTree = "<group>";
 		};
+		C332C121280DA4540009DA8A /* SwiftUI+Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C3C55925280F0C6C00CC4A05 /* SWULocations */,
+				C3C55922280F085E00CC4A05 /* SWULocation */,
+			);
+			path = "SwiftUI+Screens";
+			sourceTree = "<group>";
+		};
 		C34F37DE2809ECDB00DC3B63 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +377,25 @@
 				C34F37F02809F0F600DC3B63 /* Combine_UIKit_Tests.swift */,
 			);
 			path = "Combine(UIKit)Tests";
+			sourceTree = "<group>";
+		};
+		C3C55922280F085E00CC4A05 /* SWULocation */ = {
+			isa = PBXGroup;
+			children = (
+				C332C122280DA47A0009DA8A /* SWULocationView.swift */,
+				C3C55923280F089700CC4A05 /* SWULocationViewModel.swift */,
+			);
+			path = SWULocation;
+			sourceTree = "<group>";
+		};
+		C3C55925280F0C6C00CC4A05 /* SWULocations */ = {
+			isa = PBXGroup;
+			children = (
+				C3C5592A280F109E00CC4A05 /* SWULocationsSceneFactory.swift */,
+				C3C55926280F0C7E00CC4A05 /* SWULocationsView.swift */,
+				C3C55928280F0C8C00CC4A05 /* SWULocationsViewModel.swift */,
+			);
+			path = SWULocations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,9 +507,11 @@
 			files = (
 				186C548B2809A52000D216BB /* LocationCellModel.swift in Sources */,
 				C32393B2280A3D6A00FF3976 /* Runnable.swift in Sources */,
+				C3C5592B280F109E00CC4A05 /* SWULocationsSceneFactory.swift in Sources */,
 				186C54932809A7F400D216BB /* ImagesRepositoryError.swift in Sources */,
 				C32393A0280A1E4100FF3976 /* AnyEventTracker.swift in Sources */,
 				18A9FD2F2809CB200011FA26 /* LocationsRepositoryError.swift in Sources */,
+				C3C55924280F089700CC4A05 /* SWULocationViewModel.swift in Sources */,
 				18A9FD2A2809BB130011FA26 /* Step.swift in Sources */,
 				C34F37E32809EDA000DC3B63 /* AnyUnit.swift in Sources */,
 				18A9FD272809BAE50011FA26 /* Router.swift in Sources */,
@@ -481,10 +522,13 @@
 				18A9FD252809BACB0011FA26 /* LocationListRouter.swift in Sources */,
 				C34F37E72809EDD700DC3B63 /* ViewModelType.swift in Sources */,
 				186C548E2809A64A00D216BB /* ImagesRepository.swift in Sources */,
+				C3C55929280F0C8C00CC4A05 /* SWULocationsViewModel.swift in Sources */,
 				C34F37E12809ED8100DC3B63 /* UnitType.swift in Sources */,
 				18A9FD2C2809BB7F0011FA26 /* LocationListRouterStep.swift in Sources */,
 				186C54832809999300D216BB /* LocationsRepository.swift in Sources */,
+				C332C123280DA47A0009DA8A /* SWULocationView.swift in Sources */,
 				C34F37E52809EDC000DC3B63 /* ViewModelBindable.swift in Sources */,
+				C3C55927280F0C7E00CC4A05 /* SWULocationsView.swift in Sources */,
 				C34F37E92809EDFD00DC3B63 /* AnyViewModel.swift in Sources */,
 				186C54892809A31E00D216BB /* LocationTableViewCell.swift in Sources */,
 				18A9FD232809B59B0011FA26 /* LocationListViewModelProtocol.swift in Sources */,

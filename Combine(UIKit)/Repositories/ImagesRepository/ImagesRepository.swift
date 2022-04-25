@@ -8,7 +8,7 @@
 import Combine
 import UIKit
 
-struct ImagesRepository: ImagesRepositoryProtocol {
+struct ImagesRepository: ImagesRepositoryProtocol, AutoAssemblyConst {
     
     // MARK: - Protocol methods
     

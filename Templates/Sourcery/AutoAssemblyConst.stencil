@@ -1,0 +1,30 @@
+import Foundation
+import Swinject
+
+// swiftlint:disable all
+{% for type in types.implementing.AutoAssemblyConst %}{% if not type.kind == "protocol" %}
+
+// MARK: - {{ type.name }} + Assembly
+
+final class {{ type.name }}Assembly: Assembly {
+    func assemble(container: Container) {
+        {% for inheritedType in type.inheritedTypes %}{% if not inheritedType == "AutoAssemblyConst" %}
+        container.register({{ inheritedType }}.self) { resolver in
+            {{ type.name }}()
+        }
+        {% endif %}{% endfor %}
+    }
+}
+{% endif %}{% endfor %}
+
+enum ConstAssembler {
+    static func make() -> Assembler {
+        Assembler([
+            {% for type in types.implementing.AutoAssemblyConst %}{% if not type.kind == "protocol" %}
+            {{ type.name }}Assembly(){% if not forloop.last %},{% endif %}
+            {% endif %}{% endfor %}
+        ])
+    }
+}
+
+// swiftlint:enable all

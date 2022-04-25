@@ -8,3 +8,4 @@
 import Foundation
 
 protocol AutoResolveFactoryMethod { }
+protocol AutoAssemblyConst { }

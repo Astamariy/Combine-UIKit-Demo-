@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 
-struct LocationsRepository: LocationsRepositoryProtocol {
+struct LocationsRepository: LocationsRepositoryProtocol, AutoAssemblyConst {
     
     // MARK: - Private properties
     

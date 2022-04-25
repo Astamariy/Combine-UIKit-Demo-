@@ -49,6 +49,10 @@
 		C34F37E72809EDD700DC3B63 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37E62809EDD700DC3B63 /* ViewModelType.swift */; };
 		C34F37E92809EDFD00DC3B63 /* AnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37E82809EDFD00DC3B63 /* AnyViewModel.swift */; };
 		C34F37F12809F0F600DC3B63 /* Combine_UIKit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37F02809F0F600DC3B63 /* Combine_UIKit_Tests.swift */; };
+		C3EC56C62816A5F4004220FF /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = C3EC56C52816A5F4004220FF /* Swinject */; };
+		C3EC56CA2816A8D0004220FF /* Markers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EC56C92816A8D0004220FF /* Markers.swift */; };
+		C3EC56CC2816AF17004220FF /* AutoResolveFactoryMethod.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EC56CB2816AF17004220FF /* AutoResolveFactoryMethod.generated.swift */; };
+		C3EC56CE2816BA24004220FF /* AutoAssemblyConst.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EC56CD2816BA24004220FF /* AutoAssemblyConst.generated.swift */; };
 		D331FCEAAC20921F95051CD8 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF3141885EEA06E89ECD213 /* LocationsViewModel.swift */; };
 		DE20C815F56F956DD2B82D14 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2812763FB36176CA4AB9B2F6 /* LocationsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -64,7 +68,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0172CE71CDDB6AE371421048 /* SomView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomView.swift; sourceTree = "<group>"; };
 		186C5462280991E100D216BB /* Combine(UIKit).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Combine(UIKit).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		186C5465280991E100D216BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		186C5467280991E100D216BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,7 +96,6 @@
 		2812763FB36176CA4AB9B2F6 /* LocationsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		3A5A72546D8F35592663CB59 /* LocationsViewUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationsViewUnit.swift; sourceTree = "<group>"; };
 		3DF3141885EEA06E89ECD213 /* LocationsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
-		5B2077E6F40490113D0EFAC0 /* SomViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomViewModel.swift; sourceTree = "<group>"; };
 		6532966CFE22DCEFC8A457A3 /* SomeLocationTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomeLocationTableViewCell.swift; sourceTree = "<group>"; };
 		93C466085C576766E378B4B0 /* LocationsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationsConfigurator.swift; sourceTree = "<group>"; };
 		95DEA894DB508F3BA9439188 /* SomeLocationTableViewCellViewUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomeLocationTableViewCellViewUnit.swift; sourceTree = "<group>"; };
@@ -111,8 +113,9 @@
 		C34F37E82809EDFD00DC3B63 /* AnyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyViewModel.swift; sourceTree = "<group>"; };
 		C34F37EE2809F0F600DC3B63 /* Combine(UIKit)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Combine(UIKit)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34F37F02809F0F600DC3B63 /* Combine_UIKit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_UIKit_Tests.swift; sourceTree = "<group>"; };
-		D80BD128B093B4D3DBFAC592 /* SomViewUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomViewUnit.swift; sourceTree = "<group>"; };
-		E977676FABC9017EE5609CAE /* SomViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomViewController.swift; sourceTree = "<group>"; };
+		C3EC56C92816A8D0004220FF /* Markers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markers.swift; sourceTree = "<group>"; };
+		C3EC56CB2816AF17004220FF /* AutoResolveFactoryMethod.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoResolveFactoryMethod.generated.swift; sourceTree = "<group>"; };
+		C3EC56CD2816BA24004220FF /* AutoAssemblyConst.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoAssemblyConst.generated.swift; sourceTree = "<group>"; };
 		F18B9C3A03419163D0A99C4A /* LocationsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C32393A3280A239600FF3976 /* SnapKit in Frameworks */,
+				C3EC56C62816A5F4004220FF /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,17 +139,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0FE62BD12F38DADB32C545E9 /* Som */ = {
-			isa = PBXGroup;
-			children = (
-				0172CE71CDDB6AE371421048 /* SomView.swift */,
-				E977676FABC9017EE5609CAE /* SomViewController.swift */,
-				D80BD128B093B4D3DBFAC592 /* SomViewUnit.swift */,
-				5B2077E6F40490113D0EFAC0 /* SomViewModel.swift */,
-			);
-			path = Som;
-			sourceTree = "<group>";
-		};
 		186C5459280991E100D216BB = {
 			isa = PBXGroup;
 			children = (
@@ -173,11 +166,11 @@
 				18A9FD282809BAEA0011FA26 /* Navigation */,
 				186C54842809999900D216BB /* Repositories */,
 				186C54792809928300D216BB /* Screens */,
+				C3EC56C82816A889004220FF /* Autogenerated */,
 				186C546B280991E100D216BB /* Main.storyboard */,
 				186C546E280991E400D216BB /* Assets.xcassets */,
 				186C5470280991E400D216BB /* LaunchScreen.storyboard */,
 				186C5473280991E400D216BB /* Info.plist */,
-				6FE5D434C23FE55D57A54F6C /* Scenes */,
 			);
 			path = "Combine(UIKit)";
 			sourceTree = "<group>";
@@ -298,14 +291,6 @@
 			path = Locations;
 			sourceTree = "<group>";
 		};
-		6FE5D434C23FE55D57A54F6C /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				0FE62BD12F38DADB32C545E9 /* Som */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
 		78AAD99DF92D429B019951F6 /* SomeLocation */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,6 +368,16 @@
 			path = "Combine(UIKit)Tests";
 			sourceTree = "<group>";
 		};
+		C3EC56C82816A889004220FF /* Autogenerated */ = {
+			isa = PBXGroup;
+			children = (
+				C3EC56C92816A8D0004220FF /* Markers.swift */,
+				C3EC56CB2816AF17004220FF /* AutoResolveFactoryMethod.generated.swift */,
+				C3EC56CD2816BA24004220FF /* AutoAssemblyConst.generated.swift */,
+			);
+			path = Autogenerated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -390,6 +385,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 186C5476280991E400D216BB /* Build configuration list for PBXNativeTarget "Combine(UIKit)" */;
 			buildPhases = (
+				C3EC56C72816A7A1004220FF /* Sourcery */,
 				186C545E280991E100D216BB /* Sources */,
 				186C545F280991E100D216BB /* Frameworks */,
 				186C5460280991E100D216BB /* Resources */,
@@ -401,6 +397,7 @@
 			name = "Combine(UIKit)";
 			packageProductDependencies = (
 				C32393A2280A239600FF3976 /* SnapKit */,
+				C3EC56C52816A5F4004220FF /* Swinject */,
 			);
 			productName = "Combine(UIKit)";
 			productReference = 186C5462280991E100D216BB /* Combine(UIKit).app */;
@@ -454,6 +451,7 @@
 			mainGroup = 186C5459280991E100D216BB;
 			packageReferences = (
 				C32393A1280A239600FF3976 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C3EC56C42816A5F4004220FF /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = 186C5463280991E100D216BB /* Products */;
 			projectDirPath = "";
@@ -485,6 +483,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C3EC56C72816A7A1004220FF /* Sourcery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Sourcery;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which sourcery > /dev/null; then\n    sourcery\nelse\n    echo \"install please Sourcery\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		186C545E280991E100D216BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -495,10 +514,12 @@
 				186C54932809A7F400D216BB /* ImagesRepositoryError.swift in Sources */,
 				C32393A0280A1E4100FF3976 /* AnyEventTracker.swift in Sources */,
 				18A9FD2F2809CB200011FA26 /* LocationsRepositoryError.swift in Sources */,
+				C3EC56CE2816BA24004220FF /* AutoAssemblyConst.generated.swift in Sources */,
 				18A9FD2A2809BB130011FA26 /* Step.swift in Sources */,
 				C34F37E32809EDA000DC3B63 /* AnyUnit.swift in Sources */,
 				18A9FD272809BAE50011FA26 /* Router.swift in Sources */,
 				186C54902809A65700D216BB /* ImagesRepositoryProtocol.swift in Sources */,
+				C3EC56CC2816AF17004220FF /* AutoResolveFactoryMethod.generated.swift in Sources */,
 				186C546A280991E100D216BB /* LocationListViewController.swift in Sources */,
 				186C5466280991E100D216BB /* AppDelegate.swift in Sources */,
 				18A9FD332809CCD00011FA26 /* LocationListConfigurator.swift in Sources */,
@@ -519,6 +540,7 @@
 				186C5468280991E100D216BB /* SceneDelegate.swift in Sources */,
 				186C54812809966900D216BB /* Location.swift in Sources */,
 				186C547F2809936100D216BB /* LocationListViewModel.swift in Sources */,
+				C3EC56CA2816A8D0004220FF /* Markers.swift in Sources */,
 				C323939E280A1E0300FF3976 /* EventTrackerType.swift in Sources */,
 				4EE267DC88CC9285B1241214 /* SomeLocationTableViewCell.swift in Sources */,
 				07D2B317C7A11919CF57E417 /* SomeLocationTableViewCellViewUnit.swift in Sources */,
@@ -823,6 +845,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		C3EC56C42816A5F4004220FF /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -830,6 +860,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C32393A1280A239600FF3976 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		C3EC56C52816A5F4004220FF /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3EC56C42816A5F4004220FF /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

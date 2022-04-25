@@ -23,7 +23,7 @@ final class SomeLocationTableViewCellModel: ViewModelType {
     
     // MARK: - Dependencies
     
-    struct Dependencies {
+    struct Dependencies: AutoResolveFactoryMethod {
         let imageRepository: ImagesRepositoryProtocol
     }
     

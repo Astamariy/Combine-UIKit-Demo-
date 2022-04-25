@@ -15,7 +15,7 @@ final class LocationsViewModel: ViewModelType {
     
     // MARK: - Dependencies
     
-    struct Dependencies {
+    struct Dependencies: AutoResolveFactoryMethod {
         let locationRepository: LocationsRepositoryProtocol
         let cellDependencies: SomeLocationTableViewCellModel.Dependencies
     }

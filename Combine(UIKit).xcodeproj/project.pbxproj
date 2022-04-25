@@ -49,6 +49,7 @@
 		C34F37E72809EDD700DC3B63 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37E62809EDD700DC3B63 /* ViewModelType.swift */; };
 		C34F37E92809EDFD00DC3B63 /* AnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37E82809EDFD00DC3B63 /* AnyViewModel.swift */; };
 		C34F37F12809F0F600DC3B63 /* Combine_UIKit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F37F02809F0F600DC3B63 /* Combine_UIKit_Tests.swift */; };
+		C3EC56C62816A5F4004220FF /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = C3EC56C52816A5F4004220FF /* Swinject */; };
 		D331FCEAAC20921F95051CD8 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF3141885EEA06E89ECD213 /* LocationsViewModel.swift */; };
 		DE20C815F56F956DD2B82D14 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2812763FB36176CA4AB9B2F6 /* LocationsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -118,6 +119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C32393A3280A239600FF3976 /* SnapKit in Frameworks */,
+				C3EC56C62816A5F4004220FF /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +379,7 @@
 			name = "Combine(UIKit)";
 			packageProductDependencies = (
 				C32393A2280A239600FF3976 /* SnapKit */,
+				C3EC56C52816A5F4004220FF /* Swinject */,
 			);
 			productName = "Combine(UIKit)";
 			productReference = 186C5462280991E100D216BB /* Combine(UIKit).app */;
@@ -430,6 +433,7 @@
 			mainGroup = 186C5459280991E100D216BB;
 			packageReferences = (
 				C32393A1280A239600FF3976 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C3EC56C42816A5F4004220FF /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = 186C5463280991E100D216BB /* Products */;
 			projectDirPath = "";
@@ -799,6 +803,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		C3EC56C42816A5F4004220FF /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -806,6 +818,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C32393A1280A239600FF3976 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		C3EC56C52816A5F4004220FF /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3EC56C42816A5F4004220FF /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

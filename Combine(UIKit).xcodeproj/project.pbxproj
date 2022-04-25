@@ -64,7 +64,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0172CE71CDDB6AE371421048 /* SomView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomView.swift; sourceTree = "<group>"; };
 		186C5462280991E100D216BB /* Combine(UIKit).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Combine(UIKit).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		186C5465280991E100D216BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		186C5467280991E100D216BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,7 +92,6 @@
 		2812763FB36176CA4AB9B2F6 /* LocationsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		3A5A72546D8F35592663CB59 /* LocationsViewUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationsViewUnit.swift; sourceTree = "<group>"; };
 		3DF3141885EEA06E89ECD213 /* LocationsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
-		5B2077E6F40490113D0EFAC0 /* SomViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomViewModel.swift; sourceTree = "<group>"; };
 		6532966CFE22DCEFC8A457A3 /* SomeLocationTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomeLocationTableViewCell.swift; sourceTree = "<group>"; };
 		93C466085C576766E378B4B0 /* LocationsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationsConfigurator.swift; sourceTree = "<group>"; };
 		95DEA894DB508F3BA9439188 /* SomeLocationTableViewCellViewUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomeLocationTableViewCellViewUnit.swift; sourceTree = "<group>"; };
@@ -111,8 +109,6 @@
 		C34F37E82809EDFD00DC3B63 /* AnyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyViewModel.swift; sourceTree = "<group>"; };
 		C34F37EE2809F0F600DC3B63 /* Combine(UIKit)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Combine(UIKit)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34F37F02809F0F600DC3B63 /* Combine_UIKit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_UIKit_Tests.swift; sourceTree = "<group>"; };
-		D80BD128B093B4D3DBFAC592 /* SomViewUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomViewUnit.swift; sourceTree = "<group>"; };
-		E977676FABC9017EE5609CAE /* SomViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SomViewController.swift; sourceTree = "<group>"; };
 		F18B9C3A03419163D0A99C4A /* LocationsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,17 +131,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0FE62BD12F38DADB32C545E9 /* Som */ = {
-			isa = PBXGroup;
-			children = (
-				0172CE71CDDB6AE371421048 /* SomView.swift */,
-				E977676FABC9017EE5609CAE /* SomViewController.swift */,
-				D80BD128B093B4D3DBFAC592 /* SomViewUnit.swift */,
-				5B2077E6F40490113D0EFAC0 /* SomViewModel.swift */,
-			);
-			path = Som;
-			sourceTree = "<group>";
-		};
 		186C5459280991E100D216BB = {
 			isa = PBXGroup;
 			children = (
@@ -177,7 +162,6 @@
 				186C546E280991E400D216BB /* Assets.xcassets */,
 				186C5470280991E400D216BB /* LaunchScreen.storyboard */,
 				186C5473280991E400D216BB /* Info.plist */,
-				6FE5D434C23FE55D57A54F6C /* Scenes */,
 			);
 			path = "Combine(UIKit)";
 			sourceTree = "<group>";
@@ -296,14 +280,6 @@
 				93C466085C576766E378B4B0 /* LocationsConfigurator.swift */,
 			);
 			path = Locations;
-			sourceTree = "<group>";
-		};
-		6FE5D434C23FE55D57A54F6C /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				0FE62BD12F38DADB32C545E9 /* Som */,
-			);
-			path = Scenes;
 			sourceTree = "<group>";
 		};
 		78AAD99DF92D429B019951F6 /* SomeLocation */ = {

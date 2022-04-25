@@ -1,0 +1,24 @@
+import Foundation
+import Swinject
+
+// swiftlint:disable all
+{% for type in types.implementing.AutoResolveFactoryMethod %}{% if not type.kind == "protocol" %}{% if not type.storedVariables.count == 0 %}
+
+// MARK: - {{ type.name }} + Resolve
+
+extension {{ type.name }} {
+    static func resolve(with resolver: Resolver) -> {{ type.name }} {
+        {{ type.name }}(
+            {% for variable in type.storedVariables %}
+            {% if variable.type.implements.AutoResolveFactoryMethod %}
+            {{ variable.name }}: {{ variable.typeName }}.resolve(with: resolver){% if not forloop.last %},{% endif %}
+            {% else %}
+            {{ variable.name }}: resolver.resolve({{variable.typeName}}.self)!{% if not forloop.last %},{% endif %}
+            {% endif %}
+            {% endfor %}
+        )
+    }
+}
+{% endif %}{% endif %}{% endfor %}
+
+// swiftlint:enable all
